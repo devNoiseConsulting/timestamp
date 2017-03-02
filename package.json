@@ -2,7 +2,8 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "Timestamp Microservice",
-  "main": "index.js",
+  "main": "server.js",
+  "start": "node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.1"
+  },
+  "engines": {
+    "node": "6.10.0"
   }
 }
