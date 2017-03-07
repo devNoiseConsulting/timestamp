@@ -9,7 +9,13 @@ app.get('/:id', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-  res.send('Hello World!');
+  var output = {
+      "app": "Timestamp Microservice",
+      "paths": {
+          "/<unix timestamp or a natural language date>": "JSON object with unix timestamp and a natural language date."
+      }
+  };
+  res.end(JSON.stringify(output, null, 2));
 });
 
 app.listen(app.get('port'), function() {
